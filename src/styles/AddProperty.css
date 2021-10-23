@@ -1,3 +1,7 @@
 .AddProperty {
   padding: 30px;
 }
+
+.form {
+  display: flexbox;
+}

@@ -5,4 +5,10 @@ body {
   font-family: "Balsamiq Sans";
   margin: 0;
   padding: 0;
+  display: flexbox;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
 }
