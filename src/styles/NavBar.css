@@ -1,11 +1,14 @@
 .navbar {
   background-color: beige;
   border-bottom: cadetblue;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
   height: 4rem;
-  width: auto;
+  width: 8rem;
+  align-self: center;
 }
 
 .navbar-links {

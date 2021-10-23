@@ -7,11 +7,12 @@ import Properties from "./Properties";
 function App() {
   return (
     <div className="App">
-      <h2>Surreal Estate</h2>
+      <h2 className="App-title">Surreal Estate</h2>
       <NavBar />
-      <Switch />
-      <Route exact path="/" component={Properties} />
-      <Route exact path="/add-property" component={AddProperty} />
+      <Switch>
+        <Route exact path="/" component={Properties} />
+        <Route exact path="/add-property" component={AddProperty} />
+      </Switch>
     </div>
   );
 }
