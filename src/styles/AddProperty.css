@@ -1,7 +1,10 @@
 .AddProperty {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form {
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
 }
