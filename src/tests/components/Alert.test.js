@@ -6,3 +6,9 @@ it("displays an error message", () => {
 
   expect(getByText(/Error/).textContent).toBe("Error!");
 });
+
+it("displays a success message", () => {
+  const { getByText } = render(<Alert message="Success!" />);
+
+  expect(getByText(/Success/).textContent).toBe("Success!");
+});
