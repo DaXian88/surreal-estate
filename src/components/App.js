@@ -3,6 +3,7 @@ import "../styles/App.css";
 import AddProperty from "./AddProperty";
 import NavBar from "./NavBar";
 import Properties from "./Properties";
+import Alert from "./Alert";
 
 function App() {
   return (
