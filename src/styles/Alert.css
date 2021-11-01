@@ -1,0 +1,7 @@
+.alert-success {
+  border: 5px solid greenyellow;
+}
+
+.alert-error {
+  border: 5px solid red;
+}
