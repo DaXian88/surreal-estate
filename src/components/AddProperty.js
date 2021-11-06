@@ -31,9 +31,14 @@ const AddProperty = () => {
         ...fields,
       })
       .then((response) => {
+        setAlert({ message: "Property has been added", isSuccess: true });
         console.log(response);
       })
       .catch((error) => {
+        setAlert({
+          message: "Sorry, there has been a problem. Please try again",
+          isSuccess: false,
+        });
         console.log(error);
       });
   };
