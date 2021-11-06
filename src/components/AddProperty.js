@@ -20,8 +20,12 @@ const AddProperty = () => {
   };
 
   const [fields, setFields] = useState(initialState.fields);
+  const [alert, setAlert] = useState(initialState.alert);
+
   const handleAddProperty = (event) => {
     event.preventDefault();
+    setAlert({ message: "", isSuccess: false });
+
     axios
       .post("http://localhost:3000/api/v1/PropertyListing", {
         ...fields,
