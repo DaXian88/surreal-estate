@@ -7,5 +7,7 @@ const PropertyCard = ({
   city,
   email,
 }) => {
-  return <div></div>;
+  return <div>{title}</div>;
 };
+
+export default PropertyCard;
