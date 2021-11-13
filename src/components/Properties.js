@@ -4,6 +4,13 @@ import PropertyCard from "./PropertyCard";
 const Properties = () => {
   const [properties, setProperties] = useState([]);
 
+  useEffect(() => {
+    effect;
+    return () => {
+      cleanup;
+    };
+  }, [input]);
+
   return (
     <div>
       Properties Page
