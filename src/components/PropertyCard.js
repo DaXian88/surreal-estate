@@ -7,7 +7,18 @@ const PropertyCard = ({
   city,
   email,
 }) => {
-  return <div>{title}</div>;
+  return (
+    <div>
+      <div>{title}</div>
+      <div>
+        {type} - {city}
+      </div>
+      <div>{bathrooms}</div>
+      <div>{bedrooms}</div>
+      <div>{price}</div>
+      <div>{email}</div>
+    </div>
+  );
 };
 
 export default PropertyCard;
