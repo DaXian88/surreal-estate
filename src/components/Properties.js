@@ -1,6 +1,9 @@
+import { useState } from "react/cjs/react.development";
 import PropertyCard from "./PropertyCard";
 
 const Properties = () => {
+  const [properties, setProperties] = useState([]);
+
   return (
     <div>
       Properties Page
