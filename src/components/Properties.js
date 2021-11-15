@@ -1,11 +1,12 @@
 import { useState } from "react/cjs/react.development";
 import PropertyCard from "./PropertyCard";
+import axios from "axios";
 
 const Properties = () => {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
-    effect;
+    axios.get("http://localhost:3000/api/v1/PropertyListing");
     return () => {
       cleanup;
     };
