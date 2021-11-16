@@ -6,7 +6,9 @@ const Properties = () => {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3000/api/v1/PropertyListing");
+    axios
+      .get("http://localhost:3000/api/v1/PropertyListing")
+      .then(({ data }) => setProperties(data));
     return () => {
       cleanup;
     };
