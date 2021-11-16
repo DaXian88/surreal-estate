@@ -1,18 +1,18 @@
-import { useState } from "react/cjs/react.development";
+import { useState, useEffect } from "react/cjs/react.development";
 import PropertyCard from "./PropertyCard";
 import axios from "axios";
 
 const Properties = () => {
   const [properties, setProperties] = useState([]);
+  const [alert, setAlert] = useState({ message: "" });
 
   useEffect(() => {
     axios
       .get("http://localhost:3000/api/v1/PropertyListing")
       .then(({ data }) => setProperties(data));
-    return () => {
-      cleanup;
-    };
-  }, [input]);
+  }).catch((error) =>
+    setAlert({ message: "There has been an error, please try again later" })
+  );
 
   return (
     <div>
