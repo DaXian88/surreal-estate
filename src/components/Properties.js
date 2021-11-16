@@ -9,10 +9,11 @@ const Properties = () => {
   useEffect(() => {
     axios
       .get("http://localhost:3000/api/v1/PropertyListing")
-      .then(({ data }) => setProperties(data));
-  }).catch((error) =>
-    setAlert({ message: "There has been an error, please try again later" })
-  );
+      .then(({ data }) => setProperties(data))
+      .catch((error) =>
+        setAlert({ message: "There has been an error, please try again later" })
+      );
+  });
 
   return (
     <div>
