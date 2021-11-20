@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react/cjs/react.development";
 import PropertyCard from "./PropertyCard";
 import axios from "axios";
+import Alert from "./Alert";
 
 const Properties = () => {
   const [properties, setProperties] = useState([]);
@@ -17,6 +18,7 @@ const Properties = () => {
 
   return (
     <div>
+      {alert.message && <Alert message={alert.message} />}
       Properties Page
       {properties.map((property) => (
         <PropertyCard key={property._id} {...property} />
